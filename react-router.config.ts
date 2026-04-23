@@ -1,7 +1,6 @@
-import type { Config } from '@react-router/dev/config';
-
-export default {
-	appDirectory: './src/app',
-	ssr: true,
-	prerender: ['/*?'],
-} satisfies Config;
+"scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc --noEmit"
+}
